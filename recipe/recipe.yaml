@@ -1,6 +1,6 @@
 context:
   name: msgraphfs
-  version: "0.3"
+  version: "0.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: c426bd9d954c3ad03fd8ac686091eaa9b29a16db2c0c9e6f222795c14781c4f6
+  sha256: f76231687e84a8fa48e789246c1d93a3c42400f6f4c222bd6fa77128728aa4db
 
 build:
   script: python -m pip install . -vv
@@ -33,7 +33,7 @@ tests:
   - python:
       python_version: ${{ python_min }}.*
       imports:
-      - msgraphfs
+        - msgraphfs
       pip_check: true
 
 about:

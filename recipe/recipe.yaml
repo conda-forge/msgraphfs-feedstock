@@ -1,6 +1,6 @@
 context:
   name: msgraphfs
-  version: "0.4"
+  version: "0.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: f76231687e84a8fa48e789246c1d93a3c42400f6f4c222bd6fa77128728aa4db
+  sha256: 446090f67b4d0a7e39fdb883ef18424da4cb735cc4279d8c9e0a39b8989132dc
 
 build:
   script: python -m pip install . -vv
